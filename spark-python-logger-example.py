@@ -31,4 +31,6 @@ def funFunction(indata):
 # Sample RDD using the function and performing an action
 rdd2=sc.parallelize(['one','two'])
 rdd3=rdd2.map(lambda data:(funFunction(data[0])))
+
+# Output the sample output
 rdd3.take(2)
